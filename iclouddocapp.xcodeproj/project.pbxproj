@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214344361E4A804E001023C3 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 214344351E4A804E001023C3 /* MyDocument.m */; };
 		21A6583A1E462BB80085F6C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A658391E462BB80085F6C9 /* main.m */; };
 		21A6583D1E462BB80085F6C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6583C1E462BB80085F6C9 /* AppDelegate.m */; };
 		21A658401E462BB80085F6C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6583F1E462BB80085F6C9 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		214344341E4A804E001023C3 /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		214344351E4A804E001023C3 /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
 		21A658351E462BB80085F6C9 /* iclouddocapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iclouddocapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A658391E462BB80085F6C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A6583B1E462BB80085F6C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		21A6585C1E462BB90085F6C9 /* iclouddocappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iclouddocappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A658601E462BB90085F6C9 /* iclouddocappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iclouddocappUITests.m; sourceTree = "<group>"; };
 		21A658621E462BB90085F6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A6586E1E464FD20085F6C9 /* iclouddocapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iclouddocapp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		21A658371E462BB80085F6C9 /* iclouddocapp */ = {
 			isa = PBXGroup;
 			children = (
+				21A6586E1E464FD20085F6C9 /* iclouddocapp.entitlements */,
 				21A6583B1E462BB80085F6C9 /* AppDelegate.h */,
 				21A6583C1E462BB80085F6C9 /* AppDelegate.m */,
 				21A6583E1E462BB80085F6C9 /* ViewController.h */,
@@ -113,6 +118,8 @@
 				21A6584C1E462BB80085F6C9 /* Info.plist */,
 				21A658441E462BB80085F6C9 /* iclouddocapp.xcdatamodeld */,
 				21A658381E462BB80085F6C9 /* Supporting Files */,
+				214344341E4A804E001023C3 /* MyDocument.h */,
+				214344351E4A804E001023C3 /* MyDocument.m */,
 			);
 			path = iclouddocapp;
 			sourceTree = "<group>";
@@ -212,6 +219,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UBSF66U544;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					21A658501E462BB80085F6C9 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -283,6 +295,7 @@
 				21A658401E462BB80085F6C9 /* ViewController.m in Sources */,
 				21A6583D1E462BB80085F6C9 /* AppDelegate.m in Sources */,
 				21A6583A1E462BB80085F6C9 /* main.m in Sources */,
+				214344361E4A804E001023C3 /* MyDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iclouddocapp/iclouddocapp.entitlements;
 				DEVELOPMENT_TEAM = UBSF66U544;
 				INFOPLIST_FILE = iclouddocapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -443,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iclouddocapp/iclouddocapp.entitlements;
 				DEVELOPMENT_TEAM = UBSF66U544;
 				INFOPLIST_FILE = iclouddocapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -520,6 +535,7 @@
 				21A658671E462BB90085F6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21A658681E462BB90085F6C9 /* Build configuration list for PBXNativeTarget "iclouddocappTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +544,7 @@
 				21A6586A1E462BB90085F6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21A6586B1E462BB90085F6C9 /* Build configuration list for PBXNativeTarget "iclouddocappUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +553,7 @@
 				21A6586D1E462BB90085F6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
