@@ -17,14 +17,14 @@
     if ([contents length] > 0) {
         self.documentText = [[NSString alloc] initWithData:(NSData *)contents encoding:NSUTF8StringEncoding];
     } else {
-        self.documentText = @"loading blank";
+        self.documentText = @"";
     }
     return YES;
 }
 
 - (id)contentsForType:(NSString *)typeName error:(NSError **)outError {
     if (!self.documentText) {
-        self.documentText = @"saving blank";
+        self.documentText = @"";
     }
     NSData *docData = [self.documentText dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
     return docData;
