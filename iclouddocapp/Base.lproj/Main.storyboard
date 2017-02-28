@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf4-R5-xKQ">
-                                <rect key="frame" x="67" y="353" width="240" height="30"/>
+                                <rect key="frame" x="67" y="175" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90332874610000002" green="0.91329876759999995" blue="0.93059828369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Send"/>
@@ -30,16 +30,15 @@
                                     <action selector="mySendButtonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyv-l3-LhK"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8zS-fO-aEL">
-                                <rect key="frame" x="67" y="28" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="blank" translatesAutoresizingMaskIntoConstraints="NO" id="8zS-fO-aEL">
+                                <rect key="frame" x="67" y="28" width="240" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.97644394456908334" blue="0.88774655539066138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3uh-vo-5vA">
-                                <rect key="frame" x="67" y="305" width="240" height="30"/>
+                                <rect key="frame" x="67" y="137" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.95550889530000005" blue="0.82247518890000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
@@ -47,7 +46,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfb-Ap-1yZ">
-                                <rect key="frame" x="67" y="172" width="240" height="30"/>
+                                <rect key="frame" x="67" y="99" width="240" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90332874614390979" green="0.91329876763868945" blue="0.93059828367875652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Get"/>
@@ -55,12 +54,42 @@
                                     <action selector="myGetButtonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eu0-6R-4Fc"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHP-9i-pRZ">
+                                <rect key="frame" x="67" y="213" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeA-PC-b9C">
+                                <rect key="frame" x="67" y="349" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90332874610000002" green="0.91329876759999995" blue="0.93059828369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Choose an image ..."/>
+                                <connections>
+                                    <action selector="myChooseImageButtonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0p-P4-SZy"/>
+                                    <action selector="myLoadImageButtonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kuv-Yi-xYv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nm-Aj-0eo">
+                                <rect key="frame" x="67" y="387" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90332874610000002" green="0.91329876759999995" blue="0.93059828369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load iCloud Image ..."/>
+                                <connections>
+                                    <action selector="myLoadImageButtonIsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R2l-HW-EYa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mmo-Er-2dl">
+                                <rect key="frame" x="67" y="425" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="myGetButton" destination="kfb-Ap-1yZ" id="yfn-gL-dYp"/>
+                        <outlet property="myImagePickerButton" destination="WeA-PC-b9C" id="KqC-gi-n41"/>
+                        <outlet property="myImageView" destination="SHP-9i-pRZ" id="yGY-mu-99c"/>
                         <outlet property="mySendButton" destination="yf4-R5-xKQ" id="ISa-Vq-zb4"/>
+                        <outlet property="myStoredImageView" destination="mmo-Er-2dl" id="3CK-sa-2Fj"/>
                         <outlet property="myTextInput" destination="3uh-vo-5vA" id="vfs-Qo-ERZ"/>
                         <outlet property="myTextView" destination="8zS-fO-aEL" id="AMI-dP-h86"/>
                     </connections>
